@@ -118,7 +118,7 @@ export default function Home() {
                 <div className="py-100 col-10 mx-auto">
                     <h2 className="text-center text-black mb-16">Our Main Service</h2>
                     <div className="br--b-dark col-1 mx-auto"></div>
-                    <div className="d-flex align-items-center gap-50 py-74">
+                    <div className="d-flex align-items-center justify-content-center gap-50 py-74">
                         {cards.map(({ image, title, description }) => (
                             <div className="service-card px-24 py-74 bg-white text-center">
                                 <img src={image} alt="icon" width="60" height="60" />
