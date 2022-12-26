@@ -1,0 +1,155 @@
+//overwriting bootstrap colors
+$primary: #565FE0;
+$secondary: #FAFCFF;
+$success: #638A3F;
+$success-300: #759D47;
+$danger: #D8433A;
+$danger-700: #B83931;
+$warning: #F1B22A;
+$dark: #1C2534;
+$light: #EDEDED;
+$info: #5AA3ED;
+$violet: #9E4FB4;
+$pink: #EF7098;
+$purple: #8330A4;
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+$black-100: #E8E9F2;
+$green: rgb(179, 207, 169);
+$grey: #403C3B;
+$blue: rgb(63, 81, 181);
+$blue-200: rgba(63, 81, 181, 0.16);
+
+
+//custom margin and padding
+$spacer: 16px !default;
+$spacers: (
+        0: 0,
+        2: 2px,
+        4: 4px,
+        6: 6px,
+        8: 8px,
+        10: 10px,
+        12: 12px,
+        14: 14px,
+        16: 16px,
+        18: 18px,
+        20: 20px,
+        22: 22px,
+        24: 24px,
+        26: 26px,
+        28: 28px,
+        30: 30px,
+        32: 32px,
+        34: 34px,
+        36: 36px,
+        38: 38px,
+        40: 40px,
+        42: 42px,
+        44: 44px,
+        46: 46px,
+        48: 48px,
+        50: 50px,
+        52: 52px,
+        54: 54px,
+        56: 56px,
+        60: 60px,
+        64: 64px,
+        68: 68px,
+        74: 74px,
+        84: 84px,
+        100: 100px,
+        110: 110px,
+        120: 120px
+);
+
+//custom font-sizes
+$display-font-sizes: (
+        6: 6px,
+        8: 8px,
+        10: 10px,
+        12: 12px,
+        14: 14px,
+        16: 16px,
+        18: 18px,
+        20: 20px,
+        22: 22px,
+        24: 24px,
+        26: 26px,
+        28: 28px,
+        30: 30px,
+        34: 34px,
+        38: 38px,
+        40: 40px,
+        50: 50px
+);
+
+$headings-line-height: 1.5 !default;
+$display-font-weight: 400 !default;
+$display-line-height: $headings-line-height !default;
+
+//custom font-weight
+$font-weight-light: 400;
+$font-weight-normal: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+//changing units to px
+$nav-link-padding-y: 8px !default;
+$nav-link-padding-x: 6px !default;
+
+$font-size-base: 16px !default;
+
+//custom font-size for h-tag
+$h1-font-size: 64px !default;
+$h2-font-size: 46px !default;
+$h3-font-size: 36px !default;
+$h4-font-size: 24px !default;
+
+//overwriting border-radius unit
+$border-radius: 4px !default;
+$modal-footer-margin-between: 8px;
+
+//customizing default modal size
+$modal-xs: 100%;
+$modal-sm: 300px !default;
+$modal-md: 580px !default;
+$modal-lg: 650px !default;
+$modal-xl: 1140px !default;
+
+$position-values: (
+        0: 0,
+        24: 24px,
+);
+$paragraph-margin-bottom: 0;
+$headings-margin-bottom: 0 !default;
+$btn-white-space: nowrap !default;
+
+:root {
+  --primary: #565FE0;
+  --secondary: #FAFCFF;
+  --success: #638A3F;
+  --success-300: #759D47;
+  --danger: #D8433A;
+  --danger-700: #B83931;
+  --dodgerblue: #3F87DE;
+  --warning: #F1B22A;
+  --dark: #1C2534;
+  --info: #5AA3ED;
+  --violet: #9E4FB4;
+  --pink: #EF7098;
+  --white: 255, 255, 255;
+  --black: 0, 0, 0;
+  --black-10: #E8E9F2;
+  --blue: 63, 81, 181;
+  --blue-200: 63, 81, 181, 0.16;
+  --grey: #403C3B;
+  --purple: #8330A4;
+  --light-green: #62D68B;
+  --light-sky: 98, 214, 139;
+  --light-info: #4FADFF;
+}
+
+
+
+

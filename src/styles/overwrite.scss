@@ -1,0 +1,196 @@
+
+.modal-backdrop.show {
+  opacity: 0.4 !important;
+}
+
+.modal-backdrop {
+  background-color: rgba($black, 0.4);
+}
+
+.vacancy__modal-title {
+  @include media-breakpoint-up(sm) {
+    color: $black !important;
+  }
+}
+
+.accordion {
+  --bs-accordion-active-bg: transparent !important;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-border-width: 0px !important;
+  @include media-breakpoint-up(sm) {
+    --bs-accordion-border-width: 0px !important;
+  }
+  &-button {
+    background-color: transparent !important;
+  }
+  &-body {
+    background-color: $dark;
+    color: $white;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  &-item {
+    background-color: transparent !important;
+  }
+}
+
+.accordion-item:last-of-type .accordion-collapse {
+  &-button:not(.collapsed) {
+    box-shadow: none;
+  }
+  &-item:last-of-type &-collapse {
+    border-bottom-right-radius: var(--bs-accordion-border-radius);
+    border-bottom-left-radius: var(--bs-accordion-border-radius);
+  }
+}
+
+.filter__accordion-input {
+  width: 364px;
+  &:focus, &:not(:placeholder-shown) {
+    outline: none;
+  }
+}
+
+.ck-editor__editable_inline {
+  height: 176px;
+}
+
+tr {
+  border: transparent;
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--primary) !important;
+  background-color: rgb(var(--blue-200)) !important;
+  box-shadow: inset 0 -1px 0 var(--primary) !important;
+}
+
+.btn{
+  padding: 10px 24px;
+  --bs-btn-focus-box-shadow: none;
+  &-outline-danger, &-outline-success {
+    --bs-btn-hover-color: rgb(var(--white));
+    --bs-btn-active-color: rgb(var(--white));
+  }
+  &-success, &-danger {
+    --bs-btn-color: rgb(var(--white));
+    --bs-btn-hover-color: rgb(var(--white));
+    --bs-btn-active-color: rgb(var(--white));
+  }
+  &-link:hover{
+    background-color: var(--primary) !important;
+    color: rgb(var(--white)) !important;
+  }
+}
+
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.row {
+  margin: 0px;
+  --bs-gutter-x: 0;
+
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background: none;
+}
+
+.modal {
+
+  --bs-modal-footer-gap: 0;
+  @include media-breakpoint-down(sm) {
+    --bs-modal-footer-border-width: 0;
+    --bs-modal-margin: 0;
+    --bs-modal-border-radius: 0;
+    --bs-modal-inner-border-radius: 0;
+  }
+}
+
+.modal-content {
+  height: 100vh;
+  border: 0;
+  overflow-y: scroll;
+  @include media-breakpoint-up(sm) {
+    height: auto;
+    overflow-y: auto;
+  }
+}
+.form-checkbox__th , .form-checkbox__td {
+  .form-check-input {
+    width: 20px;
+    height: 20px;
+    box-shadow: none;
+    margin-top: 0;
+  }
+}
+
+.form-checkbox__th .form-check-input {
+  border: 2px solid rgba(var(--black), 0.6);
+}
+
+.form-checkbox__td .form-check-input {
+  border-color: rgba(var(--black), 0.5);
+}
+.react-datepicker-popper {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  right: 0!important;
+  margin-bottom: 2px;
+  z-index: 4;
+}
+
+.offcanvas {
+  width: 80% !important;
+  --bs-offcanvas-border-color: none;
+  @include media-breakpoint-up(sm) {
+    width: 400px !important;
+  }
+  &-body {
+    padding: 0 !important;
+  }
+  &.offcanvas-end {
+    width: 100% !important;
+    overflow-y: scroll;
+    @include media-breakpoint-up(sm) {
+      width: 400px !important;
+    }
+  }
+}
+
+.dropdown-menu {
+  --bs-dropdown-border-color: var(--white) !important;
+}
+
+input {
+  &:focus-visible {
+    outline: none;
+  }
+  &:-webkit-autofill,
+  &:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+  }
+}
+
+input[type='checkbox'] {
+  accent-color: $primary;
+}
+
+.accordion-button::after {
+  background-image: url("../assets/arrow_right.svg");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../assets/arrow_white_right.svg");
+  transform: rotate(90deg);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: $dark !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: $white
+}
