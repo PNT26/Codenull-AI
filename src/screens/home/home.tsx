@@ -1,6 +1,6 @@
 import React from 'react';
 import StyledHome from './home.style';
-import { Button, Accordion, Form, InputGroup } from "react-bootstrap";
+import { Button, Accordion } from "react-bootstrap";
 import { ArrowRight, Twitter, Instagram, Facebook, Check2 } from "react-bootstrap-icons";
 import logo from '../../assets/logo_dark.png';
 import brain from '../../assets/brain.png';
@@ -97,9 +97,9 @@ export default function Home() {
             <div className="hero__section w-100 bg-dark position-relative">
                 <div className="hero__section-content col-10 mx-auto pt-30 pb-100 bg-transparent text-white d-flex justify-content-between align-items-center">
                     <div className="col-12 col-md-6">
-                        <h1>Codenull.ai</h1>
-                        <p className="display-30 my-10">No-Code For Free AI For Business Uses Cases</p>
-                        <p className="mb-16">Build Any AI model without writing a single line of code. Use these models for Portfolio
+                        <h1 className="fw-bold fs--clash-display">Codenull.ai</h1>
+                        <p className="display-30 my-10 fs--clash-display text--white-60 text-nowrap">No-Code For Free AI For Business Uses Cases</p>
+                        <p className="mb-16 text--white-60">Build Any AI model without writing a single line of code. Use these models for Portfolio
                             optimization, Robo-advisors, Recommendation Engines, Fraud detection and much more
                         </p>
                         <Button className="btn-primary d-flex align-items-center gap-16">
@@ -146,11 +146,11 @@ export default function Home() {
                             </Accordion>
                         ))}
                     </div>
-                    <img src={services} alt="service" width="100%" className="col-6" />
+                    <img src={services} alt="service" width="100%" className="col-4" />
                 </div>
                 <img src={bgService} alt="" width="100%" height="230" className="service__bg" />
             </div>
-            <div className="w-100 position-relative my-50">
+            <div className="w-100 bg-white py-30 position-relative my-50">
                 <div className="w-100 position-absolute d-flex justify-content-between">
                     <img src={caseHeader2} alt="" width="395" />
                     <img src={caseHeader1} alt="" width="395" />
