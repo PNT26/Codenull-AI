@@ -20,11 +20,13 @@ const StyledHome = styled.div`
     height: 370px;
     z-index: 9;
     cursor: pointer;
+    background-color: $white;
     transition: 0.2s ease-in;
-
     &:hover {
       box-shadow: 0px 15px 30px rgba(12, 28, 58, 0.05);
       border-radius: 50px 0px;
+      background-color: var(--dark);
+      color: white;
     }
   }
 
@@ -54,7 +56,6 @@ const StyledHome = styled.div`
     color: var(--black);
     cursor: pointer;
     transition: 0.2s ease-in;
-
     &:hover {
       background-color: var(--dark);
       color: white;

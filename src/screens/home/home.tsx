@@ -79,14 +79,17 @@ export default function Home() {
 
     const service = [
         {
+            key: '0',
             title: '1. Prepare Your Data',
             info: 'AI models are trained on your past data to predict the future or get recommendations.'
         },
         {
+            key: '1',
             title: '2. Train Your Ai Model',
             info: 'One step Train process to kick start AI model training on your data'
         },
         {
+            key: '2',
             title: '3. Personalize Model For You',
             info: 'Use this personalized AI model specially built for you!'
         }
@@ -98,8 +101,8 @@ export default function Home() {
                 <div className="hero__section-content col-10 mx-auto pt-30 pb-100 bg-transparent text-white d-flex justify-content-between align-items-center">
                     <div className="col-12 col-md-6">
                         <h1 className="fw-bold fs--clash-display">Codenull.ai</h1>
-                        <p className="display-30 my-10 fs--clash-display text--white-60 text-nowrap">No-Code For Free AI For Business Uses Cases</p>
-                        <p className="mb-16 text--white-60">Build Any AI model without writing a single line of code. Use these models for Portfolio
+                        <p className="display-30 mb-10 fs--clash-display text--white-60 text-nowrap">No-Code For Free AI For Business Uses Cases</p>
+                        <p className="mb-30 text--white-60">Build Any AI model without writing a single line of code. Use these models for Portfolio
                             optimization, Robo-advisors, Recommendation Engines, Fraud detection and much more
                         </p>
                         <Button className="btn-primary d-flex align-items-center gap-16">
@@ -120,7 +123,7 @@ export default function Home() {
                     <div className="br--b-dark col-1 mx-auto"></div>
                     <div className="d-flex align-items-center justify-content-center gap-50 py-74">
                         {cards.map(({ image, title, description }) => (
-                            <div className="service-card px-24 py-74 bg-white text-center">
+                            <div className="service-card px-24 py-74 text-center">
                                 <img src={image} alt="icon" width="60" height="60" />
                                 <h4 className="mt-40 mb-30">{title}</h4>
                                 <p className="text-grey">{description}</p>
@@ -135,9 +138,9 @@ export default function Home() {
                 <div className="br--b-dark col-1 mx-auto"></div>
                 <div className="service__content pt-30 col-10 mx-auto d-flex justify-content-between align-items-start">
                     <div className="col-5 d-flex flex-column gap-10 mt-40">
-                        {service.map(({title, info}) => (
+                        {service.map(({key, title, info}) => (
                             <Accordion defaultActiveKey="0">
-                                <Accordion.Item eventKey="1">
+                                <Accordion.Item eventKey={key}>
                                     <Accordion.Header>{title}</Accordion.Header>
                                     <Accordion.Body>
                                         {info}
@@ -196,7 +199,7 @@ export default function Home() {
             </div>
             <div className="w-100 position-relative my-50">
                 <div className="col-11 mx-auto py-30 d-flex align-items-center justify-content-between br--b-light">
-                    <img src={logo} alt="loho" width="177" />
+                    <img src={logo} alt="logo" width="177" className="cursor--pointer" />
                     <ul className="d-flex align-items-center gap-20 display-18">
                         <li>Privacy Policy</li>
                         <li>FAQ</li>

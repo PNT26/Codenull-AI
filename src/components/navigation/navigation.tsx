@@ -8,13 +8,13 @@ export default function Navigation() {
         <StyledNavigation>
             <Navbar bg="dark" className="w-100 d-flex align-items-center justify-content-between py-10 px-84">
                 <Navbar.Brand>
-                    <img src={logo} alt="logo" width="170" />
+                    <img src={logo} alt="logo" width="170" className="cursor--pointer" />
                 </Navbar.Brand>
                 <ul className="d-flex align-items-center text-white gap-30 p-0 m-0">
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>About</li>
-                    <li>Pricing</li>
+                    <li className="cursor--pointer">Home</li>
+                    <li className="cursor--pointer">Services</li>
+                    <li className="cursor--pointer">About</li>
+                    <li className="cursor--pointer">Pricing</li>
                 </ul>
                 <ul className="d-flex align-items-center text-white gap-30 p-0 m-0">
                     <li>Login</li>
